@@ -21,9 +21,9 @@ const About: React.FC = () => {
           </div>
           
           <div className="lg:w-1/2">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">About EstateElite</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">About LTC immobilier</h2>
             <p className="text-gray-600 mb-6">
-              Founded in 2010, EstateElite has established itself as a premier real estate agency, dedicated to helping clients find their dream properties and make informed real estate decisions.
+              Founded in 2010, LTC immobilier has established itself as a premier real estate agency, dedicated to helping clients find their dream properties and make informed real estate decisions.
             </p>
             <p className="text-gray-600 mb-8">
               Our team of experienced professionals combines market expertise with personalized service to ensure every client receives the attention and guidance they deserve throughout their real estate journey.

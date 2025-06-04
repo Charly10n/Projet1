@@ -44,7 +44,7 @@ const Header: React.FC = () => {
                 scrolled ? 'text-blue-900' : 'text-white'
               }`}
             >
-              EstateElite
+              LTC immobilier
             </span>
           </div>
 

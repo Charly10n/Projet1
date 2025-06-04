@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
       
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-          Find Your Dream Home With EstateElite
+          Find Your Dream Home With LTC immobilier
         </h1>
         <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
           We help you discover the perfect property tailored to your lifestyle and preferences.
