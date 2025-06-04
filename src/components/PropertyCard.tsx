@@ -22,7 +22,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
         </div>
         <div className="absolute top-4 right-4">
           <span className="px-3 py-1 bg-yellow-600 text-white text-sm font-medium rounded-md">
-            ${property.price.toLocaleString()}
+            {property.price.toLocaleString()}
           </span>
         </div>
       </div>
