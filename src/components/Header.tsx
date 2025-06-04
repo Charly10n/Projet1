@@ -2,6 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { Home, Menu, X, Phone, Mail } from 'lucide-react';
 import { Link } from './Navigation';
 
+const navItems = [
+  { label: 'Accueil', href: '#home' },
+  { label: 'Biens', href: '#properties' },
+  { label: 'Services', href: '#services' },
+  { label: 'À propos', href: '#about' },
+  { label: 'Contact', href: '#contact' },
+];
+
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -50,19 +58,17 @@ const Header: React.FC = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            {['Accueil', 'Biens', 'Services', 'À propos', 'Contact'].map(
-              (item) => (
-                <Link
-                  key={item}
-                  to={`#${item.toLowerCase()}`}
-                  className={`font-medium transition-colors ${
-                    scrolled ? 'text-gray-700 hover:text-blue-900' : 'text-white hover:text-gold-400'
-                  }`}
-                >
-                  {item}
-                </Link>
-              )
-            )}
+            {navItems.map(({ label, href }) => (
+              <Link
+                key={href}
+                to={href}
+                className={`font-medium transition-colors ${
+                  scrolled ? 'text-gray-700 hover:text-blue-900' : 'text-white hover:text-gold-400'
+                }`}
+              >
+                {label}
+              </Link>
+            ))}
           </nav>
 
           {/* Contact Info for Desktop */}
@@ -96,18 +102,16 @@ const Header: React.FC = () => {
         {isOpen && (
           <div className="md:hidden bg-white rounded-lg shadow-xl mt-2 py-4 px-2 absolute left-4 right-4 transition-all duration-300">
             <nav className="flex flex-col space-y-3">
-              {['Accueil', 'Biens', 'Services', 'À propos', 'Contact'].map(
-                (item) => (
-                  <Link
-                    key={item}
-                    to={`#${item.toLowerCase()}`}
-                    className="text-gray-700 hover:text-blue-900 px-4 py-2 rounded-md hover:bg-gray-100"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    {item}
-                  </Link>
-                )
-              )}
+              {navItems.map(({ label, href }) => (
+                <Link
+                  key={href}
+                  to={href}
+                  className="text-gray-700 hover:text-blue-900 px-4 py-2 rounded-md hover:bg-gray-100"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {label}
+                </Link>
+              ))}
               <div className="border-t border-gray-200 pt-3 mt-2 px-4">
                 <a
                   href="tel:+1234567890"
