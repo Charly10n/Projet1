@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
           <div>
             <div className="flex items-center mb-4">
               <Home className="mr-2" size={28} />
-              <span className="text-xl font-semibold">EstateElite</span>
+              <span className="text-xl font-semibold">LTC immobilier</span>
             </div>
             <p className="text-gray-400 mb-6">
               Your trusted partner in finding the perfect property. With years of experience and a dedicated team, we make real estate dreams come true.
@@ -87,7 +87,7 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="pt-8 border-t border-gray-800 text-center text-gray-500">
-          <p>&copy; {new Date().getFullYear()} EstateElite. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} LTC immobilier. All rights reserved.</p>
           <div className="mt-2 flex justify-center space-x-6">
             <a href="#" className="text-gray-500 hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="text-gray-500 hover:text-white transition-colors">Terms of Service</a>
