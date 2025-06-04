@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
               <span className="text-xl font-semibold">LTC immobilier</span>
             </div>
             <p className="text-gray-400 mb-6">
-              Your trusted partner in finding the perfect property. With years of experience and a dedicated team, we make real estate dreams come true.
+              Votre partenaire de confiance pour trouver le bien idéal. Avec des années d'expérience et une équipe dévouée, nous concrétisons vos rêves immobiliers.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
@@ -32,9 +32,9 @@ const Footer: React.FC = () => {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-4">Liens rapides</h3>
             <ul className="space-y-3">
-              {['Home', 'Properties', 'Services', 'About', 'Contact'].map((item) => (
+              {['Accueil', 'Biens', 'Services', 'À propos', 'Contact'].map((item) => (
                 <li key={item}>
                   <Link
                     to={`#${item.toLowerCase()}`}
@@ -48,16 +48,16 @@ const Footer: React.FC = () => {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Property Types</h3>
+            <h3 className="text-lg font-semibold mb-4">Types de biens</h3>
             <ul className="space-y-3">
-              {[
-                'Residential Properties',
-                'Commercial Spaces',
-                'Luxury Homes',
-                'Vacation Rentals',
-                'Investment Properties',
-                'New Developments'
-              ].map((item, index) => (
+                {[
+                  'Biens r\u00e9sidentiels',
+                  'Espaces commerciaux',
+                  'Maisons de luxe',
+                  'Locations de vacances',
+                  "Biens d'investissement",
+                  'Nouvelles constructions'
+                ].map((item, index) => (
                 <li key={index}>
                   <a href="#" className="text-gray-400 hover:text-white transition-colors">
                     {item}
@@ -68,7 +68,7 @@ const Footer: React.FC = () => {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
+            <h3 className="text-lg font-semibold mb-4">Informations de contact</h3>
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin size={20} className="mr-3 mt-1 text-gray-400" />
@@ -87,11 +87,11 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="pt-8 border-t border-gray-800 text-center text-gray-500">
-          <p>&copy; {new Date().getFullYear()} LTC immobilier. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} LTC immobilier. Tous droits réservés.</p>
           <div className="mt-2 flex justify-center space-x-6">
-            <a href="#" className="text-gray-500 hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="text-gray-500 hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="text-gray-500 hover:text-white transition-colors">Sitemap</a>
+            <a href="#" className="text-gray-500 hover:text-white transition-colors">Politique de confidentialité</a>
+            <a href="#" className="text-gray-500 hover:text-white transition-colors">Conditions d'utilisation</a>
+            <a href="#" className="text-gray-500 hover:text-white transition-colors">Plan du site</a>
           </div>
         </div>
       </div>

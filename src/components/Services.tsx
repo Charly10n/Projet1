@@ -11,38 +11,38 @@ interface Service {
 const services: Service[] = [
   {
     id: 1,
-    title: 'Property Listings',
-    description: 'Access our extensive database of properties for sale and rent across prime locations.',
+    title: 'Annonces immobilières',
+    description: 'Accédez à notre vaste base de biens à vendre ou à louer dans des emplacements de choix.',
     icon: <Home size={32} className="text-blue-900" />,
   },
   {
     id: 2,
-    title: 'Property Search',
-    description: 'Use our advanced search tools to find properties that match your specific requirements.',
+    title: 'Recherche de biens',
+    description: 'Utilisez nos outils de recherche avancés pour trouver les biens correspondant à vos critères.',
     icon: <Search size={32} className="text-blue-900" />,
   },
   {
     id: 3,
-    title: 'Buying Assistance',
-    description: 'Our experts guide you through the entire home buying process from search to closing.',
+    title: 'Assistance à l'achat',
+    description: "Nos experts vous accompagnent tout au long du processus d'achat, de la recherche à la signature.",
     icon: <Key size={32} className="text-blue-900" />,
   },
   {
     id: 4,
-    title: 'Expert Agents',
-    description: 'Work with experienced real estate agents who know the local market inside and out.',
+    title: 'Agents experts',
+    description: 'Collaborez avec des agents expérimentés qui connaissent parfaitement le marché local.',
     icon: <Users size={32} className="text-blue-900" />,
   },
   {
     id: 5,
-    title: 'Property Management',
-    description: 'Comprehensive property management services for landlords and property investors.',
+    title: 'Gestion immobilière',
+    description: 'Services complets de gestion pour propriétaires et investisseurs immobiliers.',
     icon: <Building size={32} className="text-blue-900" />,
   },
   {
     id: 6,
-    title: 'Financing Options',
-    description: 'Access to preferred lenders and financing solutions tailored to your needs.',
+    title: 'Solutions de financement',
+    description: 'Accédez à des organismes de prêt privilégiés et à des solutions adaptées à vos besoins.',
     icon: <DollarSign size={32} className="text-blue-900" />,
   },
 ];
@@ -52,9 +52,9 @@ const Services: React.FC = () => {
     <section id="services" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Nos services</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            We offer a comprehensive range of real estate services to meet all your property needs.
+            Nous proposons une gamme complète de services immobiliers pour répondre à tous vos besoins.
           </p>
         </div>
         
