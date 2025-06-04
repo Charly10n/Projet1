@@ -33,21 +33,21 @@ const ContactForm: React.FC = () => {
     const newErrors: FormErrors = {};
     
     if (!formData.name.trim()) {
-      newErrors.name = 'Name is required';
+      newErrors.name = 'Le nom est obligatoire';
     }
     
     if (!formData.email.trim()) {
-      newErrors.email = 'Email is required';
+      newErrors.email = "L'email est obligatoire";
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = 'Please enter a valid email';
+      newErrors.email = 'Veuillez saisir un e-mail valide';
     }
     
     if (!formData.phone.trim()) {
-      newErrors.phone = 'Phone number is required';
+      newErrors.phone = 'Le numéro de téléphone est obligatoire';
     }
     
     if (!formData.message.trim()) {
-      newErrors.message = 'Message is required';
+      newErrors.message = 'Le message est obligatoire';
     }
     
     setErrors(newErrors);
@@ -87,27 +87,27 @@ const ContactForm: React.FC = () => {
     <section id="contact" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Contact Us</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Contactez-nous</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Have questions or need assistance? Reach out to our team of real estate experts.
+            Des questions ou besoin d'aide ? Contactez notre équipe d'experts immobiliers.
           </p>
         </div>
         
         <div className="flex flex-col lg:flex-row gap-12">
           <div className="lg:w-1/2">
             <div className="bg-white p-8 rounded-lg shadow-md h-full">
-              <h3 className="text-2xl font-semibold text-gray-800 mb-6">Get In Touch</h3>
+              <h3 className="text-2xl font-semibold text-gray-800 mb-6">Prenez contact</h3>
               
               {isSubmitted ? (
                 <div className="bg-green-50 text-green-800 p-6 rounded-lg">
-                  <h4 className="text-xl font-medium mb-2">Thank You!</h4>
-                  <p>Your message has been received. One of our representatives will contact you shortly.</p>
+                  <h4 className="text-xl font-medium mb-2">Merci !</h4>
+                  <p>Votre message a bien été reçu. L'un de nos représentants vous contactera prochainement.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit}>
                   <div className="mb-4">
                     <label htmlFor="name" className="block text-gray-700 mb-2">
-                      Full Name*
+                      Nom complet*
                     </label>
                     <input
                       type="text"
@@ -124,7 +124,7 @@ const ContactForm: React.FC = () => {
                   
                   <div className="mb-4">
                     <label htmlFor="email" className="block text-gray-700 mb-2">
-                      Email Address*
+                      Adresse e-mail*
                     </label>
                     <input
                       type="email"
@@ -141,7 +141,7 @@ const ContactForm: React.FC = () => {
                   
                   <div className="mb-4">
                     <label htmlFor="phone" className="block text-gray-700 mb-2">
-                      Phone Number*
+                      Numéro de téléphone*
                     </label>
                     <input
                       type="tel"
@@ -158,7 +158,7 @@ const ContactForm: React.FC = () => {
                   
                   <div className="mb-4">
                     <label htmlFor="propertyType" className="block text-gray-700 mb-2">
-                      Property Interest
+                      Type de bien
                     </label>
                     <select
                       id="propertyType"
@@ -167,11 +167,11 @@ const ContactForm: React.FC = () => {
                       onChange={handleChange}
                       className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-900"
                     >
-                      <option value="residential">Residential</option>
+                      <option value="residential">Résidentiel</option>
                       <option value="commercial">Commercial</option>
-                      <option value="luxury">Luxury</option>
-                      <option value="rental">Rental</option>
-                      <option value="investment">Investment</option>
+                      <option value="luxury">De luxe</option>
+                      <option value="rental">Location</option>
+                      <option value="investment">Investissement</option>
                     </select>
                   </div>
                   
@@ -201,7 +201,7 @@ const ContactForm: React.FC = () => {
                         : 'bg-blue-900 hover:bg-blue-800 text-white'
                     }`}
                   >
-                    {isSubmitting ? 'Sending...' : 'Send Message'}
+                    {isSubmitting ? 'Envoi...' : 'Envoyer le message'}
                   </button>
                 </form>
               )}
@@ -210,13 +210,13 @@ const ContactForm: React.FC = () => {
           
           <div className="lg:w-1/2">
             <div className="bg-blue-900 text-white p-8 rounded-lg shadow-md h-full">
-              <h3 className="text-2xl font-semibold mb-8">Contact Information</h3>
+              <h3 className="text-2xl font-semibold mb-8">Informations de contact</h3>
               
               <div className="space-y-6">
                 <div className="flex items-start">
                   <MapPin size={24} className="mr-4 mt-1" />
                   <div>
-                    <h4 className="font-medium mb-1">Our Office</h4>
+                    <h4 className="font-medium mb-1">Notre agence</h4>
                     <p>123 Real Estate Avenue</p>
                     <p>New York, NY 10001</p>
                   </div>
@@ -225,7 +225,7 @@ const ContactForm: React.FC = () => {
                 <div className="flex items-start">
                   <Phone size={24} className="mr-4 mt-1" />
                   <div>
-                    <h4 className="font-medium mb-1">Phone</h4>
+                    <h4 className="font-medium mb-1">Téléphone</h4>
                     <p>(123) 456-7890</p>
                     <p>(123) 456-7891</p>
                   </div>
@@ -234,7 +234,7 @@ const ContactForm: React.FC = () => {
                 <div className="flex items-start">
                   <Mail size={24} className="mr-4 mt-1" />
                   <div>
-                    <h4 className="font-medium mb-1">Email</h4>
+                    <h4 className="font-medium mb-1">E-mail</h4>
                     <p>info@estateelite.com</p>
                     <p>support@estateelite.com</p>
                   </div>
@@ -243,16 +243,16 @@ const ContactForm: React.FC = () => {
                 <div className="flex items-start">
                   <Clock size={24} className="mr-4 mt-1" />
                   <div>
-                    <h4 className="font-medium mb-1">Business Hours</h4>
-                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                    <p>Saturday: 10:00 AM - 4:00 PM</p>
-                    <p>Sunday: Closed</p>
+                    <h4 className="font-medium mb-1">Horaires</h4>
+                    <p>Lundi - Vendredi : 9h00 - 18h00</p>
+                    <p>Samedi : 10h00 - 16h00</p>
+                    <p>Dimanche : fermé</p>
                   </div>
                 </div>
               </div>
               
               <div className="mt-10">
-                <h4 className="font-medium mb-4">Connect With Us</h4>
+                <h4 className="font-medium mb-4">Suivez-nous</h4>
                 <div className="flex space-x-4">
                   {['facebook', 'twitter', 'instagram', 'linkedin'].map((social) => (
                     <a

@@ -14,24 +14,24 @@ const testimonials: Testimonial[] = [
   {
     id: 1,
     name: 'Sarah Johnson',
-    role: 'Homeowner',
-    content: 'LTC immobilier made finding our dream home an absolute pleasure. Their attention to detail and understanding of our needs was exceptional. Highly recommend their services!',
+    role: 'Propriétaire',
+    content: 'LTC immobilier a rendu la recherche de notre maison idéale très agréable. Leur sens du détail et leur compréhension de nos besoins étaient exceptionnels. Nous recommandons vivement leurs services !',
     rating: 5,
     imageUrl: 'https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750',
   },
   {
     id: 2,
     name: 'Michael Rodriguez',
-    role: 'Property Investor',
-    content: 'As an investor, I needed an agency that understood the market deeply. LTC immobilier exceeded my expectations with their market insights and professional guidance.',
+    role: 'Investisseur immobilier',
+    content: "En tant qu'investisseur, j'avais besoin d'une agence qui comprenne parfaitement le marché. LTC immobilier a dépassé mes attentes grâce à ses analyses et ses conseils professionnels.",
     rating: 5,
     imageUrl: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750',
   },
   {
     id: 3,
     name: 'Jennifer Lee',
-    role: 'First-time Buyer',
-    content: 'Buying my first home was intimidating, but the team at LTC immobilier guided me through every step with patience and expertise. I couldn\'t be happier with my new home!',
+    role: 'Premier achat',
+    content: "Acheter ma première maison était intimidant, mais l'équipe de LTC immobilier m'a accompagné à chaque étape avec patience et expertise. Je ne pourrais pas être plus heureux de mon nouveau chez-moi !",
     rating: 4,
     imageUrl: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750',
   },
@@ -52,9 +52,9 @@ const Testimonials: React.FC = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Ce que disent nos clients</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Read testimonials from our satisfied clients who found their dream properties with our help.
+            Lisez les témoignages de nos clients satisfaits qui ont trouvé leur bien grâce à notre aide.
           </p>
         </div>
         
@@ -97,7 +97,7 @@ const Testimonials: React.FC = () => {
               <button
                 onClick={prevTestimonial}
                 className="p-2 rounded-full bg-gray-200 hover:bg-blue-900 hover:text-white transition-colors duration-300"
-                aria-label="Previous testimonial"
+                aria-label="Témoignage précédent"
               >
                 <ChevronLeft size={24} />
               </button>
@@ -109,14 +109,14 @@ const Testimonials: React.FC = () => {
                     className={`w-3 h-3 rounded-full transition-colors duration-300 ${
                       index === activeIndex ? 'bg-blue-900' : 'bg-gray-300'
                     }`}
-                    aria-label={`Go to testimonial ${index + 1}`}
+                    aria-label={`Aller au témoignage ${index + 1}`}
                   />
                 ))}
               </div>
               <button
                 onClick={nextTestimonial}
                 className="p-2 rounded-full bg-gray-200 hover:bg-blue-900 hover:text-white transition-colors duration-300"
-                aria-label="Next testimonial"
+                aria-label="Témoignage suivant"
               >
                 <ChevronRight size={24} />
               </button>

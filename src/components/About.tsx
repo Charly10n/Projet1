@@ -15,28 +15,28 @@ const About: React.FC = () => {
               />
               <div className="absolute -bottom-8 -right-8 bg-blue-900 text-white p-6 rounded-lg shadow-lg hidden md:block">
                 <p className="text-3xl font-bold">15+</p>
-                <p className="text-sm">Years of Experience</p>
+                <p className="text-sm">années d'expérience</p>
               </div>
             </div>
           </div>
           
           <div className="lg:w-1/2">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">About LTC immobilier</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">À propos de LTC immobilier</h2>
             <p className="text-gray-600 mb-6">
-              Founded in 2010, LTC immobilier has established itself as a premier real estate agency, dedicated to helping clients find their dream properties and make informed real estate decisions.
+              Fondée en 2010, LTC immobilier s'est imposée comme une agence immobilière de premier plan, dédiée à aider ses clients à trouver le bien de leurs rêves et à prendre des décisions éclairées.
             </p>
             <p className="text-gray-600 mb-8">
-              Our team of experienced professionals combines market expertise with personalized service to ensure every client receives the attention and guidance they deserve throughout their real estate journey.
+              Notre équipe de professionnels expérimentés allie connaissance du marché et service personnalisé afin que chaque client bénéficie de l'accompagnement qu'il mérite tout au long de son projet immobilier.
             </p>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
               {[
-                'Expert local knowledge',
-                'Personalized service',
-                'Transparent process',
-                'Negotiation expertise',
-                'After-sale support',
-                'Client-focused approach'
+                'Connaissance locale experte',
+                'Service personnalisé',
+                'Processus transparent',
+                'Expertise en négociation',
+                'Suivi après-vente',
+                'Approche centrée client'
               ].map((item, index) => (
                 <div key={index} className="flex items-center">
                   <CheckCircle2 size={20} className="text-blue-900 mr-2" />
@@ -46,7 +46,7 @@ const About: React.FC = () => {
             </div>
             
             <button className="px-8 py-3 bg-blue-900 hover:bg-blue-800 text-white font-medium rounded-md transition-colors duration-300">
-              Learn More About Us
+              En savoir plus sur nous
             </button>
           </div>
         </div>

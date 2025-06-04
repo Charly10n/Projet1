@@ -38,20 +38,20 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
         <div className="flex justify-between mb-5">
           <div className="flex items-center text-gray-600">
             <Bed size={18} className="mr-1" />
-            <span>{property.bedrooms} Beds</span>
+            <span>{property.bedrooms} chambres</span>
           </div>
           <div className="flex items-center text-gray-600">
             <Bath size={18} className="mr-1" />
-            <span>{property.bathrooms} Baths</span>
+            <span>{property.bathrooms} salles de bain</span>
           </div>
           <div className="flex items-center text-gray-600">
             <Home size={18} className="mr-1" />
-            <span>{property.sqft} sqft</span>
+            <span>{property.sqft} pieds²</span>
           </div>
         </div>
         
         <button className="w-full py-3 bg-gray-100 hover:bg-blue-900 hover:text-white text-blue-900 font-medium rounded-md transition-colors duration-300 flex items-center justify-center">
-          View Details
+          Voir les détails
           <ChevronRight size={16} className="ml-1" />
         </button>
       </div>

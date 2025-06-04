@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 
 function App() {
   useEffect(() => {
-    document.title = 'LTC immobilier | Premium Real Estate Agency';
+    document.title = 'LTC immobilier | Agence immobilière haut de gamme';
   }, []);
 
   return (

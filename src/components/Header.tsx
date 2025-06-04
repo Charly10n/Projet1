@@ -50,7 +50,7 @@ const Header: React.FC = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            {['Home', 'Properties', 'Services', 'About', 'Contact'].map(
+            {['Accueil', 'Biens', 'Services', 'À propos', 'Contact'].map(
               (item) => (
                 <Link
                   key={item}
@@ -82,7 +82,7 @@ const Header: React.FC = () => {
           <button
             className="md:hidden focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
+            aria-label="Basculer le menu"
           >
             {isOpen ? (
               <X size={24} className={scrolled ? 'text-blue-900' : 'text-white'} />
@@ -96,7 +96,7 @@ const Header: React.FC = () => {
         {isOpen && (
           <div className="md:hidden bg-white rounded-lg shadow-xl mt-2 py-4 px-2 absolute left-4 right-4 transition-all duration-300">
             <nav className="flex flex-col space-y-3">
-              {['Home', 'Properties', 'Services', 'About', 'Contact'].map(
+              {['Accueil', 'Biens', 'Services', 'À propos', 'Contact'].map(
                 (item) => (
                   <Link
                     key={item}
